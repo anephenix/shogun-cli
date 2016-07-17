@@ -1,0 +1,12 @@
+#!/usr/bin/env node
+
+'use strict';
+
+// Dependencies
+const vorpal = require('vorpal')();
+const lib = require('../index');
+
+vorpal.command('start').action((args, cb) => {
+	console.log('hi');
+	cb();
+});
