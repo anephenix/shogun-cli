@@ -1,0 +1,26 @@
+{
+  "name": "shogun",
+  "version": "1.0.0",
+  "description": "The CLI for Shogunapp.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anephenix/shogun-cli.git"
+  },
+  "keywords": [
+    "Shogun",
+    "agile"
+  ],
+  "author": "Paul Jensen <paul@anephenix.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anephenix/shogun-cli/issues"
+  },
+  "homepage": "https://github.com/anephenix/shogun-cli#readme",
+  "dependencies": {
+    "vorpal": "^1.11.2"
+  }
+}
