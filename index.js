@@ -2,18 +2,17 @@
 
 let lib = {
 
-	start: (args, cb) => {
-		this.log('starting');
-	},
+  start: (args) => {
+    console.log('starting');
+  },
 
-	stop: (args, cb) => {
-		this.log('stopping');
-	},
+  stop: (args) => {
+    console.log('stopping');
+  },
 
-	finish: (args, cb) => {
-		this.log('finishing');
-	}
-
+  finish: (args) => {
+    console.log('finishing');
+  }
 };
 
 module.exports = lib;

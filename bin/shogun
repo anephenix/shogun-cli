@@ -3,10 +3,21 @@
 'use strict';
 
 // Dependencies
-const vorpal = require('vorpal')();
+const commander = require('commander');
 const lib = require('../index');
+const pkgjson = require('../package.json');
 
-vorpal.command('start').action((args, cb) => {
-	console.log('hi');
-	cb();
-});
+commander
+  .version(pkgjson.version)
+  .command('start')
+  .action(lib.start);
+
+commander
+  .command('stop')
+  .action(lib.stop);
+
+commander
+  .command('finish')
+  .action(lib.finish);
+
+commander.parse(process.argv);
