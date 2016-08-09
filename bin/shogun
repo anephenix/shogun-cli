@@ -9,6 +9,12 @@ const pkgjson = require('../package.json');
 
 commander
   .version(pkgjson.version)
+
+commander
+	.command('signup')
+	.action(lib.signup);
+
+commander
   .command('start')
   .action(lib.start);
 
